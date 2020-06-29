@@ -1,0 +1,33 @@
+@import "fonts";
+@import "null";
+@import "vars";
+@import "libs";
+@import "plag";
+
+/*!
+   *Main custom css file copiled with scss
+   *Author:Yurii Babyn
+   *Email:gofrelancetalks@gmail.com
+ */
+
+body {
+  color: $text;
+  font-family: $default-font;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+.content {
+  flex: 1 1 auto;
+}
+
+@import "media";

@@ -1,0 +1,104 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1600px) {
+
+}
+@media only screen and (max-width: 1200px) {
+   
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  
+}
+/**/
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+
+}
+/**/
+
+@media only screen and (max-width: 586px) {
+  
+   body.lock {
+      overflow: hidden;
+   }
+   .header__menu-burger {
+      position: absolute;
+      right: 30px;
+      top: 38px;
+   }
+   .header__burger {
+      display: block;
+      position: relative;
+      width: 26px;
+      height: 20px;
+      z-index: 8;
+      top: 14px;
+   }
+   .header__btn-call {
+      margin-top: 10px;
+   }
+   .header__burger span {
+      position: absolute;
+      background-color: #333;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      top: 11px;
+      transition: all 0.4s ease 0s;
+   }
+   .header__burger:before,
+   .header__burger:after {
+      content: "";
+      background-color: #333;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      left: 0;
+      transition: all 0.4s ease 0s;
+   }
+   .header__burger:before {
+      top: 3;
+   }
+   .header__burger:after {
+      bottom: -5px;
+   }
+
+   .header__burger.active span {
+      transform: scale(0);
+   }
+
+   .header__burger.active:before {
+      transform: rotate(45deg);
+      top: 17px;
+      background: $accent;
+   }
+   .header__burger.active:after {
+      transform: rotate(-45deg);
+      bottom: 0px;
+      background: $accent;
+   }
+   
+}
+
+@media only screen and (max-width: 480px) {
+  
+}
+
+@media only screen and (max-width: 410px) {
+
+}
+/**/
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 370px) {
+
+
+
+}
+@media only screen and (max-width: 340px) {
+
+}
+//for photo gallery
+
+/**/
