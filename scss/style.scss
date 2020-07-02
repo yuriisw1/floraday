@@ -2,7 +2,7 @@
 @import "null";
 @import "vars";
 @import "libs";
-// @import "plag";
+@import "plag";
 
 /*!
    *Main custom css file copiled with scss
@@ -95,10 +95,10 @@ body {
   &::before {
     position: absolute;
     content: "";
-    bottom: -100px;
+    bottom: -120px;
     left: 0px;
     width: 100%;
-    height: 120px;
+    height: 140px;
     background: url(../img/wave-up.png) bottom center/ cover no-repeat;
     z-index: 1;
   }
@@ -176,6 +176,39 @@ body {
   }
 }
 
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  flex-direction: column;
+  &__item {
+    flex: 0 1 33.333%;
+    padding: 30px 0px;
+    max-width: 600px;
+    max-height: auto;
+    span{
+      display: block;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 900;
+      color: $text;
+      padding: 25px;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .button{
+    margin-top: 40px;
+  }
+}
+
+
+
 .img-content {
   display: flex;
   justify-content: center;
@@ -209,24 +242,11 @@ body {
   background: linear-gradient(80.47deg, rgba(66, 255, 0, 0.6) -1.28%, rgba(59, 240, 30, 0) 86.82%), #0b9409;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.8);
   overflow: hidden;
-  //   &::before {
-  //     overflow: hidden;
-  //     content: "";
-  //     position: absolute;
-  //     top: 0;
-  //     left: 0;
-  //     width: 2.5em;
-  //     height: 100%;
-  //     background: rgb(255,255,255);
-  // background: linear-gradient(90deg, rgba(255,255,255,0.2) 0%, rgba(230,230,230,0.4) 51%, rgba(208,208,208,0.6) 100%);
-  //     transform: translateX(-4em) skewX(-45deg);
-  //
-  //   }
-  //   &:hover {
-  //     top: 3px;
-  //     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
-  //     background: linear-gradient(80.47deg, rgba(66, 255, 0, 0.8) -1.28%, rgba(59, 240, 30, 0) 86.82%), #0b9409;
-  //   }
+  &:hover {
+    top: 3px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(80.47deg, rgba(66, 255, 0, 0.8) -1.28%, rgba(59, 240, 30, 0) 86.82%), #0b9409;
+  }
   a {
     color: #fff;
   }
@@ -242,6 +262,7 @@ body {
     transform: skewX(-30deg);
     animation: move-light 1.9s infinite;
   }
+}
 @keyframes move-light {
   from {
     transform: translateX(-4em);
@@ -250,6 +271,71 @@ body {
   to {
     transform: translateX(16em);
   }
+}
+
+.results {
+  padding-top: 120px;
+}
+
+.slider__item {
+  transform: scale(0.4);
+  padding: 0px 20px;
+  transition: all 0.5s ease 0s;
+  opacity: 0.7;
+  // min-height: 300px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.slider__item.slick-center {
+  transform: scale(1.5);
+  text-align: center;
+  opacity: 1;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.slick-slider {
+  min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+
+/* Точки (булиты) */
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+.slick-dots li {
+  list-style: none;
+  margin: 0px 10px;
+}
+/* Активная точка */
+.slick-dots li.slick-active {
+}
+/* Элемент точки */
+.slick-dots li button {
+  font-size: 0;
+  width: 13px;
+  height: 13px;
+  background: $accent;
+  border-radius: 50%;
+}
+.slider .slick-dots li.slick-active button {
+  background: transparent;
+  border: 1px solid $accent;
 }
 
 .advant {
@@ -281,20 +367,20 @@ body {
   &::before {
     position: absolute;
     content: "";
-    top: -10px;
+    top: -30px;
     left: 0px;
     width: 100%;
-    height: 120px;
+    height: 140px;
     background: url(../img/wave.png) center top/ cover no-repeat;
     z-index: 1;
   }
   &::after {
     position: absolute;
     content: "";
-    bottom: -10px;
+    bottom: -40px;
     left: 0px;
     width: 100%;
-    height: 120px;
+    height: 140px;
     background: url(../img/wave-up.png) center bottom/ cover no-repeat;
   }
   &__bg {
@@ -743,11 +829,11 @@ body {
   &::after {
     position: absolute;
     content: "";
-    top: -90px;
+    top: -100px;
     left: 0px;
     background: url(../img/wave.png) center top/ cover no-repeat;
     width: 100%;
-    height: 120px;
+    height: 140px;
   }
   &__title {
     color: #fff;

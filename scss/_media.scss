@@ -1,25 +1,297 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1600px) {
-
+   .reviews {
+      .container {
+         padding: 0 30px;
+      }
+   }
 }
 @media only screen and (max-width: 1200px) {
-   
+   .header {
+      &__timer {
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: flex-start;
+
+         span {
+            max-width: none;
+            margin-bottom: 20px;
+         }
+      }
+      &__can {
+         height: 100%;
+         display: flex;
+         align-items: flex-end;
+         top: -20px;
+
+         &__wrapper {
+         }
+      }
+   }
+   .p-colors {
+      &__bottom {
+         padding-top: 200px;
+
+         img {
+            max-width: 150%;
+         }
+      }
+   }
+   .reviews {
+      &__item {
+         align-items: stretch;
+      }
+      &__img {
+         height: auto;
+      }
+      &__body {
+         padding: 30px 20px 30px 40px;
+      }
+   }
+   .button {
+      text-align: center;
+   }
+   .form-form {
+      .button {
+         width: 100%;
+         padding: 25px 15px;
+      }
+   }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  
+   .header {
+      &__title {
+         font-size: 35px;
+
+         span {
+            font-size: 60px;
+         }
+      }
+      &__can {
+         &__wrapper {
+            margin-left: 10%;
+         }
+      }
+   }
+
+   .reviews {
+      &__img {
+         flex: 0 1 40%;
+      }
+      &__body {
+         flex: 0 1 60%;
+      }
+   }
+
+   .p-colors {
+      padding: 80px 15px;
+
+      &__form__wrapper {
+         max-width: 55%;
+         flex: 0 0 55%;
+      }
+      &__item {
+         span {
+            font-size: 18px;
+         }
+      }
+
+      &__bottom {
+         padding-top: 100px;
+      }
+   }
+   .bx-s {
+      font-size: 16px;
+   }
+   .advant {
+      span {
+         font-size: 18px;
+      }
+   }
+   .title {
+      font-size: 30px;
+   }
+   .products {
+      &__title {
+         font-size: 40px;
+      }
+   }
 }
 /**/
 
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
+   .ps {
+      &_countdown {
+         &_wrap {
+            transform: scale(0.8);
+            transform-origin: 0 50%;
+         }
+      }
+   }
+}
 
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+   .header {
+      height: auto;
+      padding: 50px 15px;
+
+      &__btn {
+         margin-top: 30px;
+         margin-bottom: 40px;
+         text-align: center;
+      }
+      &__timer {
+         text-align: center;
+         align-items: center;
+
+         span {
+            text-align: center;
+            margin-right: 0;
+            display: inline-block;
+         }
+      }
+      &__can {
+         margin: 0 auto;
+
+         &__wrapper {
+            margin-left: 0;
+            max-width: 100%;
+            flex: auto;
+         }
+      }
+
+      &__title {
+         font-size: 24px;
+         flex-wrap: wrap;
+
+         span {
+            font-size: 40px;
+            margin: 20px;
+         }
+      }
+   }
+   .img-content {
+      margin-top: 10px;
+   }
+   .ps_countdown_wrap {
+      transform-origin: 50% 50%;
+   }
+   .advant {
+      padding: 50px 0;
+
+      &__item {
+         margin-bottom: 30px;
+      }
+
+      span {
+         margin-top: 20px;
+      }
+   }
+   .title {
+      margin-bottom: 30px;
+   }
+   .p-colors {
+      padding: 30px 15px;
+      overflow: hidden;
+
+      &__title {
+         margin-top: 50px;
+      }
+
+      &__bottom {
+         padding-top: 30px;
+
+         & > div:first-child {
+            height: 400px;
+
+            img {
+               height: 140%;
+               max-width: unset;
+               position: relative;
+               top: -60px;
+            }
+         }
+      }
+
+      &__form {
+         &__wrapper {
+            max-width: 100%;
+            flex: 0 0 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+         }
+      }
+
+      &::before {
+         top: -100px;
+      }
+      &::after {
+         bottom: -100px;
+      }
+   }
+   .profisays {
+      &__img {
+         text-align: center;
+         margin-bottom: 30px;
+
+         img {
+            display: inline-block;
+         }
+      }
+   }
+   .products {
+      height: auto;
+   }
+   .results {
+      padding-top: 50px;
+   }
+   .reviews {
+      padding: 80px 0 50px;
+
+      &__item {
+         margin-top: 50px;
+      }
+      &__body {
+         padding: 15px 20px;
+      }
+   }
+   .customer {
+      &__name {
+         margin-bottom: 15px;
+      }
+   }
+   .howorder {
+      overflow: hidden;
+      padding: 40px 0 80px;
+   }
+   .header-2x {
+      margin-top: 30px;
+   }
+   .title {
+      font-size: 30px;
+      padding: 0 15px;
+   }
 }
 /**/
 
 @media only screen and (max-width: 586px) {
-  
+   .p-colors {
+      &__item {
+         width: 50%;
+         margin-bottom: 20px;
+
+         &__wrapper {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+         }
+      }
+   }
+
    body.lock {
       overflow: hidden;
    }
@@ -79,25 +351,186 @@
       bottom: 0px;
       background: $accent;
    }
-   
+
+   .img-content {
+      flex-direction: column;
+   }
+   .reviews__item {
+      flex-direction: column;
+   }
 }
 
+@media only screen and (max-width: 575px) {
+}
 @media only screen and (max-width: 480px) {
-  
+   .ps_countdown_wrap {
+      transform: scale(0.55);
+   }
+   .header__title {
+      font-size: 20px;
+   }
+   .img-box__item {
+      margin-top: 15px;
+   }
+   .header {
+      &__timer {
+         width: 320px;
+         overflow: hidden;
+         margin-left: auto;
+         margin-right: auto;
+
+         span {
+            margin-bottom: 0;
+         }
+      }
+      &__btn {
+         margin-top: 0;
+         margin-bottom: 30px;
+         padding: 0 15px;
+      }
+   }
+   .img-box {
+      width: 100%;
+      padding: 0 15px;
+   }
+   .button {
+      padding: 25px 15px;
+      width: 100%;
+   }
+   .advant__item {
+      margin-bottom: 30px;
+      max-width: 100%;
+      flex: 0 0 100%;
+
+      img {
+         width: 230px;
+         height: auto;
+      }
+   }
+   .p-colors {
+      &__item {
+         width: 100%;
+
+         img {
+            width: 230px;
+            height: auto;
+         }
+      }
+
+      &__btn-popup {
+         margin-top: 15px;
+      }
+   }
+   .form {
+      margin: 0 -30px;
+
+      &__price {
+         padding: 15px;
+
+         &-new {
+            span {
+               &:last-child {
+                  font-size: 20px;
+                  margin-top: 10px;
+               }
+            }
+         }
+         &-old {
+            span {
+               &:last-child {
+                  font-size: 18px;
+                  margin-top: 10px;
+               }
+            }
+         }
+      }
+      &-form {
+         padding: 15px;
+      }
+   }
+   #timer {
+      display: flex;
+   }
+   .counter {
+      width: 58%;
+   }
+   .profisays {
+      padding-bottom: 40px;
+   }
+   .products {
+      padding-top: 40px;
+
+      &__title {
+         font-size: 30px;
+         margin-bottom: 20px;
+      }
+
+      &__row {
+         transform: none;
+      }
+
+      &__item {
+         width: 50%;
+         min-width: 50%;
+
+         &:nth-child(1) {
+            top: -10px;
+         }
+         &:nth-child(2) {
+            top: 0;
+         }
+         &:nth-child(3) {
+            top: 20px;
+         }
+         &:nth-child(4) {
+            top: 0;
+         }
+      }
+
+      &__btn {
+         margin-bottom: 20px;
+      }
+   }
+   .header-2x {
+      .form {
+         margin: 0 -15px;
+      }
+   }
+   .footer__row {
+      flex-direction: column;
+      align-items: flex-start;
+
+      & > div:not(:last-child) {
+         margin-bottom: 10px;
+      }
+   }
+   .reviews__item {
+      margin-left: -15px;
+      margin-right: -15px;
+   }
+   .gallery {
+      &__item {
+         span {
+            font-size: 17px;
+         }
+         &:first-child{
+            padding: 0px 0px 30px 0px;
+         }
+      }
+      .button{
+         font-size: 20px;
+         padding: 20px 10px;
+      }
+   }
 }
 
 @media only screen and (max-width: 410px) {
-
 }
 /**/
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 370px) {
-
-
-
 }
 @media only screen and (max-width: 340px) {
-
 }
 //for photo gallery
 
